@@ -1,0 +1,109 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$font-color: #4B4E59;
+
+body {
+  color: $font-color;
+  font-family: "adobe-garamond-pro", serif;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+
+  @media screen and (max-width: 600px) {
+    padding: 2rem;
+  }
+}
+
+a {
+  color: #3880F4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+  line-height: 5rem;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+    line-height: initial;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.7rem;
+  }
+
+  img {
+    border: 2px solid $font-color;
+    border-radius: 1rem;
+    max-height: 10rem;
+    vertical-align: middle;
+    width: auto;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+hr {
+  border: 0;
+  background-color: #999;
+  height: 1px;
+}
+
+.double {
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+
+  img {
+    width: 10rem;
+  }
+
+  p {
+    margin: 0 10%;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: block;
+
+    & > p, & > img {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.single {
+  @media screen and (min-width: 600px) {
+    padding: 0 20%;
+  }
+}
+
+.stronghr {
+  border: 0;
+  background-color: $font-color;
+  height: 3px;
+}
